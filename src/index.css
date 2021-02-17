@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+.app{
+  background-image: url('./assets/sunny-bg.jpg');
+  background-size: cover;
+  background-position: top;
+  transition: 1s ease-out;
+}
+
+.app.cold{
+  background-image: url('./assets/snowy-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: 1s ease-out;
+}
+
+main{
+  min-height: 100vh;
+  background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0,0,0, 0.55));
+  padding: 25px;
+}
+
+.search-box{
+  width: 100%;
+}
+
+.search-box .search-bar{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15%;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.45);
+
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 1s ease;
+}
+
+.search-box .search-bar:hover,
+.search-box .search-bar:focus{
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.location-box .location{
+  color: #fff;
+  font-size: 2.8em;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.7);
+}
+
+
+.location-box .date{
+  color: #fff;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 1%;
+  text-shadow: 2px 3px rgba(50, 50, 70, 0.9);
+}
+
+.weather-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.temp{
+  color: #fff;
+  font-size: 4em;
+  text-shadow: 2px 3px rgba(50, 50, 70, 0.7);
+  margin-bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 5%;
+}
+
+.weather-box .weather{
+  color: #FFF;
+  font-size: 1.5em;
+  text-shadow: 2px 3px rgba(50, 50, 70, 0.7);
+}
